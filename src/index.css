@@ -62,5 +62,4 @@ img { -webkit-user-drag: none; }
   .page-in, .pop-in, .sheet-up { animation: none; }
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
-  .marquee-track { animation: none; }
 }

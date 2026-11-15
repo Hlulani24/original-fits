@@ -23,7 +23,7 @@ export default function Contact() {
   );
 
   return (
-    <main className="pt-[112px] md:pt-[124px]">
+    <main className="pt-[130px] md:pt-[150px]">
       <section className="mx-auto max-w-7xl px-5 pb-24 pt-12 md:px-8 md:pt-16">
         <p className="reveal eyebrow text-brass">Contact</p>
         <h1 className="reveal h-serif mt-3 text-6xl md:text-8xl" data-d="1">Let’s <em className="font-medium italic text-emerald">talk.</em></h1>
@@ -34,6 +34,7 @@ export default function Contact() {
             {PHONES.map((p) => (<Row key={p.tel} icon={<Phone size={20} />} label="Call" value={p.display} href={`tel:${p.tel}`} />))}
             {SOCIALS.instagram && <Row icon={<Instagram size={20} />} label="Instagram" value={SOCIALS.instagram.label} href={SOCIALS.instagram.url} target="_blank" rel="noreferrer" />}
             {SOCIALS.facebook && <Row icon={<Facebook size={20} />} label="Facebook" value={SOCIALS.facebook.label} href={SOCIALS.facebook.url} target="_blank" rel="noreferrer" />}
+            {SOCIALS.tiktok && <Row icon={<span className="text-lg">♪</span>} label="TikTok" value={SOCIALS.tiktok.label} href={SOCIALS.tiktok.url} target="_blank" rel="noreferrer" />}
           </div>
           <div className="rounded-[2rem] bg-white/70 p-6 md:p-9">
             {status === "done" ? (

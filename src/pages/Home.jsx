@@ -36,11 +36,11 @@ export default function Home() {
   return (
     <main>
       {/* HERO */}
-      <section className="relative overflow-hidden pt-[112px] md:pt-[124px]">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 pb-20 pt-10 md:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:pb-28 lg:pt-16">
+      <section className="relative overflow-hidden pt-[130px] md:pt-[150px]">
+        <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 pb-20 pt-6 md:px-8 lg:grid-cols-[1fr_1fr] lg:pb-28 lg:pt-10">
           <div>
             <p className="reveal eyebrow text-brass">Pre-loved designer · {products.length} pieces in store</p>
-            <h1 className="reveal h-serif mt-5 text-[3.6rem] sm:text-[5.2rem] lg:text-[6.8rem]" data-d="1">
+            <h1 className="reveal h-serif mt-5 text-[3.6rem] sm:text-[5.2rem] lg:text-[5.8rem]" data-d="1">
               Original brands,
               <br /><em className="font-medium italic text-emerald">second time</em> around.
             </h1>
@@ -53,9 +53,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="reveal relative mx-auto grid w-full max-w-[640px] grid-cols-3 items-end gap-3 md:gap-4" data-d="1">
+          <div className="reveal relative mx-auto grid w-full max-w-[620px] grid-cols-3 items-center gap-3 md:gap-4" data-d="1">
             {ARCHES.map((n, i) => (
-              <div key={n} className={`arch overflow-hidden bg-sand ${i === 1 ? "aspect-[3/5]" : "aspect-[3/4]"}`}>
+              <div key={n} className={`arch overflow-hidden bg-sand ${i === 1 ? "aspect-[3/5.6]" : "aspect-[3/4.4]"}`}>
                 <img src={`/images/p/${n}.jpg`} alt="" className="h-full w-full object-cover" fetchpriority="high" />
               </div>
             ))}

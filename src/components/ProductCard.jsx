@@ -19,7 +19,7 @@ export default function ProductCard({ p, onOpen, i = 0 }) {
         </span>
       </div>
       <div className="mt-3 px-1">
-        <p className="eyebrow text-[0.62rem] text-ink/45">{brandOf(p)}</p>
+        <p className="eyebrow flex items-center gap-2 text-[0.62rem] text-ink/45">{a?.hex && <span title={a.label} className="h-2.5 w-2.5 rounded-full border border-ink/30" style={{ background: a.hex }} />}{brandOf(p)}</p>
         <h3 className="mt-1 font-display text-[1.15rem] font-semibold leading-tight tracking-tight">{p.name}</h3>
       </div>
     </button>

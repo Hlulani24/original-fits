@@ -75,7 +75,7 @@ export default function Collections({ params }) {
   );
 
   return (
-    <main className="pt-[112px] md:pt-[124px]">
+    <main className="pt-[130px] md:pt-[150px]">
       <section className="mx-auto max-w-7xl px-5 pb-24 pt-12 md:px-8 md:pt-16">
         <p className="reveal eyebrow text-brass">The collection</p>
         <h1 className="reveal h-serif mt-3 text-6xl md:text-8xl" data-d="1">{brand !== "All" ? brand : cat !== "All" ? cat : <>Shop <em className="font-medium italic">everything</em></>}</h1>

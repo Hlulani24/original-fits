@@ -340,6 +340,24 @@ const RAW = [
  }
 ];
 
+
+// Main colour of each piece (name + swatch) so shoppers can see/choose it. Add more colours in the admin by adding photos.
+const C = {
+  black: ["Black", "#151515"], white: ["White", "#F4F4F0"], cream: ["Cream", "#E8DFC8"], grey: ["Grey", "#8C8C8C"], blue: ["Blue", "#1F5FD0"],
+  denim: ["Light denim", "#8FB0D3"], indigo: ["Indigo", "#2B4468"], wash: ["Washed black", "#4A4A4A"], brown: ["Brown", "#6B4A2B"], tan: ["Tan", "#A9774B"],
+  khaki: ["Khaki", "#8E8A6A"], taupe: ["Taupe", "#A89F86"], red: ["Red & black", "#B3171F"], rose: ["Dusty rose", "#B79A8B"], olive: ["Olive grey", "#4B4B3B"],
+  puffer: ["Light grey", "#C9C9C4"], check: ["Black check", "#2A2A2A"], dbrown: ["Dark brown", "#3F2718"], floral: ["Black floral", "#2B2B2B"], mid: ["Mid blue", "#5C86B8"],
+};
+const COLOURS = {
+  "lumiscianior-6": C.black, "louis-vuitton-32": C.denim, "celine-tee-xl": C.black, "philipp-plein-tee-l": C.white, "burberry-jacket-m": C.check,
+  "nike-8": C.cream, "chrome-hearts-34": C.black, "lacoste-polo-m": C.blue, "lacoste-joggers-m": C.grey, "zara-26": C.wash, "ntqt-34": C.indigo,
+  "gucci-tee-m": C.white, "gaodi-5": C.taupe, "christian-dior-9": C.denim, "jordan-10": C.red, "iam-studio-shorts-l": C.grey, "y3-jacket-m": C.olive,
+  "gucci-pants-48": C.rose, "gucci-laptop-bag": C.khaki, "fendi-shorts-m": C.grey, "american-eagle-36": C.denim, "g-star-36": C.denim,
+  "balenciaga-6": C.cream, "chrome-hearts-tee-l": C.black, "gucci-sneakers-6": C.white, "nike-air-flight-9": C.black, "alexander-mcqueen-5": C.white,
+  "bally-7": C.black, "louis-vuitton-bag": C.brown, "coach-hand-bag": C.tan, "scotch-soda-32": C.floral, "gucci-bag": C.brown, "next-jeans-34": C.mid,
+  "chrome-hearts-32": C.black, "puffer-jacket-l": C.puffer, "dolce-gabbana-32": C.indigo, "jm-weston-12": C.dbrown,
+};
+
 export const SEED_PRODUCTS = RAW.map((p, i) => ({
   id: p.id,
   name: p.name,
@@ -348,7 +366,7 @@ export const SEED_PRODUCTS = RAW.map((p, i) => ({
   featured: p.featured,
   blurb: p.note,
   sizes: [p.size],
-  images: [{ src: `/images/p/${p.id}.jpg`, label: p.name }],
+  images: [{ src: `/images/p/${p.id}.jpg`, label: COLOURS[p.id]?.[0] || "Standard", hex: COLOURS[p.id]?.[1] || null }],
   price: p.price,
   salePrice: null,
   visible: true,

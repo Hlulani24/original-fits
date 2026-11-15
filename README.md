@@ -32,3 +32,9 @@ npm run build    # production build in dist/
 - The 37 starter products were transcribed from the WhatsApp catalogue screenshots; the photos are small thumbnails — replace with originals.
 - Names corrected from the listing: "Couch" → Coach, "Phillip Plein" → Philipp Plein, "me jeans" → Next jeans (photo shows the NEXT label, and a R600 price tag vs R700 listed), "Large" → Puffer Jacket (L). Some product titles were guessed from the photo (e.g. Balenciaga Triple S, Gucci Ace, Dior High-Tops).
 - The logo is a simple placeholder wordmark + hanger icon — swap in the real logo if they have one.
+
+## Logo & photos
+- Logo files: `public/brand/` (lockup, light lockup for dark backgrounds, monogram). The logo is drawn in `src/components/Brand.jsx`.
+- Product photos are in `public/images/p/<product-id>.jpg`. They were small thumbnails from the WhatsApp catalogue that I upscaled (EDSR) — to get truly sharp photos, drop the original images in with the **same filenames** (square, 1000px+ is ideal), or upload new ones from Admin → Products.
+- Colour / size / quantity: shoppers choose them in the product viewer. Add more colours by adding extra photos (each with a colour) to a product in Admin; offer more sizes by ticking them.
+- If the admin demo still shows old products/photos in your browser, use Admin → "Reset demo products".

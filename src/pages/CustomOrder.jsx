@@ -40,7 +40,7 @@ export default function Request() {
   }
 
   return (
-    <main className="pt-[112px] md:pt-[124px]">
+    <main className="pt-[130px] md:pt-[150px]">
       <section className="mx-auto grid max-w-7xl gap-12 px-5 pb-24 pt-14 md:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
         <div className="lg:sticky lg:top-40 lg:self-start">
           <p className="reveal eyebrow text-brass">Request a piece</p>

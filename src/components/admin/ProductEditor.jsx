@@ -276,7 +276,7 @@ export default function ProductEditor({ product, all, onClose, notify }) {
               </div>
             </div>
             <p className="mt-2 text-xs text-bone/45">
-              The first photo is the main one shown on the shop. Add extra angles if you have them.
+              The first photo is the main one. Each photo is one colour customers can choose — name it and tap its colour.
             </p>
 
             {showLib && (

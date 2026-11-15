@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-5 pb-10 pt-20 md:px-8">
         <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
           <div>
-            <Logo light />
+            <Logo light size="lg" />
             <p className="mt-6 max-w-sm font-display text-3xl italic leading-tight text-cream/90">Original brands. Second time around.</p>
             <p className="mt-4 text-sm text-cream/55">All original second-hand brands, in smart and good condition.</p>
           </div>
@@ -29,12 +29,12 @@ export default function Footer() {
               {PHONES.map((p) => (<li key={p.tel}><a href={`tel:${p.tel}`} className="inline-flex items-center gap-2 hover:text-sun"><Phone size={16} /> {p.display}</a></li>))}
               {SOCIALS.instagram && <li><a href={SOCIALS.instagram.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:text-sun"><Instagram size={16} /> {SOCIALS.instagram.label}</a></li>}
               {SOCIALS.facebook && <li><a href={SOCIALS.facebook.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:text-sun"><Facebook size={16} /> {SOCIALS.facebook.label}</a></li>}
-            </ul>
+              {SOCIALS.tiktok && <li><a href={SOCIALS.tiktok.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:text-sun">♪ {SOCIALS.tiktok.label}</a></li>}            </ul>
           </div>
         </div>
         <div className="mt-16 flex flex-col gap-3 border-t border-cream/15 pt-6 text-xs text-cream/45 md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} Original Fits. Every piece is one of one and sold as seen.</p>
-          <a href={href("admin")} className="hover:text-cream">Staff login</a>
+          <b>Designed By Maluleke Hlulani.</b><a href={href("admin")} className="hover:text-cream">Staff login</a>
         </div>
       </div>
     </footer>

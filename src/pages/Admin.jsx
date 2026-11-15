@@ -46,7 +46,7 @@ export default function Admin() {
       <header className="sticky top-0 z-30 border-b border-white/10 bg-ink/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-5 py-4">
           <div className="flex items-center gap-3">
-            <img src="/favicon.svg" alt="" className="h-9 w-9" />
+            <img src="/favicon.png" alt="" className="h-9 w-9" />
             <div>
               <p className="font-display text-lg font-extrabold leading-none tracking-wide">Admin</p>
               <p className="mt-1 text-[0.65rem] font-bold uppercase tracking-widest text-bone/40">

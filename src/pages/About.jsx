@@ -10,7 +10,7 @@ const POINTS = [
 
 export default function About() {
   return (
-    <main className="pt-[112px] md:pt-[124px]">
+    <main className="pt-[130px] md:pt-[150px]">
       <section className="mx-auto max-w-7xl px-5 pb-20 pt-12 md:px-8 md:pt-16">
         <p className="reveal eyebrow text-brass">Our story</p>
         <h1 className="reveal h-serif mt-4 max-w-5xl text-6xl md:text-[7.5rem]" data-d="1">Good taste<br />deserves a <em className="font-medium italic text-emerald">second life.</em></h1>

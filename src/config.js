@@ -9,16 +9,16 @@ export const BRAND = {
 
 // TODO: add the shop's WhatsApp number in international format, no "+" (e.g. 27821234567).
 // While empty, WhatsApp buttons open WhatsApp with the message ready to send to any contact.
-export const WHATSAPP_NUMBER = "";
+export const WHATSAPP_NUMBER = "27754291202";
 
 // Optional call numbers shown in the footer / contact page: [{ display: "082 123 4567", tel: "+27821234567" }]
-export const PHONES = [];
+export const PHONES = [{display: "27754291202", tel: "27754291202"}];
 
 // Optional social links: { label, url }. Leave a key out to hide it.
 export const SOCIALS = {
-  // instagram: { label: "@originalfits", url: "https://www.instagram.com/…" },
-  // tiktok: { label: "@originalfits", url: "https://www.tiktok.com/@…" },
-  // facebook: { label: "Original Fits", url: "https://www.facebook.com/…" },
+   instagram: { label: "Instagram", url: "https://www.instagram.com/explore/search" },
+   tiktok: { label: "TikTok", url: "https://www.tiktok.com/search/top?q=original%20fits" },
+   facebook: { label: "Facebook", url: "https://www.facebook.com/search/top?q=original%20fits" },
 };
 
 export const SHOW_PRICES = true;
